@@ -60,6 +60,15 @@ int main()
     transform(arr.begin(), arr.end(), arr.begin(), [&iter](A*&){ return new A(iter++); });
     printArray(arr);
 
+    array<A, 5> valArr;
+    valArr.fill(A(3));
+    valArr[2] = 4;
+    for (auto &item : valArr)
+    {
+        cout << item << " ";
+    }
+    cout << endl;
+
     return 0;
 }
 

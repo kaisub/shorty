@@ -13,6 +13,7 @@
 #include <cstring>
 #include <algorithm>
 #include <typeinfo>
+#include <list>
 
 using namespace std;
 
@@ -146,6 +147,8 @@ int main()
     performTest<deque<ExpensiveObject>>();
 
     performTest<array<ExpensiveObject, CONTAINER_SIZE>>();
+
+//    performTest<list<ExpensiveObject>>();
 
     return 0;
 }
